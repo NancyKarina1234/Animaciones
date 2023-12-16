@@ -14,10 +14,15 @@ grid-area: menu;
 background-color:#A1E283;
 margin: 0px;
 padding: 0px;
+display: flex;
+flex-direction:column;
+
 }
+
 .menu-categoria{
     padding-left: 10px;
 }
+
 i {
     font-size: small;
     margin: 10px;
@@ -29,6 +34,28 @@ i {
     "footer footer";
     gap: px;
 }
+@media (max-width: 576px) {
+    .grid-container{
+        grid-template-areas:"header"
+            "menu "
+            "main"
+            "footer";
+        }
+    menu{
+        display: flex;
+        flex-direction: row;
+    }
+    .categorias{
+            display: none;
+    }
+    .main-container{
+        display: grid;
+        grid-template-columns: 6rem 1fr;
+    }
+       
+    }
+
+
 .main-container{
     padding: 30px;
     grid-area: main-container;
@@ -39,6 +66,7 @@ i {
     row-gap: 30px;
     column-gap: 15px;s
 }
+
 
 .grid-item {
     height: 300px;
@@ -81,6 +109,7 @@ footer{
     background-color:#377E17;
     height: 180px;
     margin: 0px;
+    width: 100%;
 }
 .iconos {
     margin: 0px;
