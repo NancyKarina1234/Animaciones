@@ -1,0 +1,32 @@
+header{
+    grid-area: header;
+    background-color: #66f;
+    }
+    menu{
+    grid-area: menu;
+    background-color: #66f;
+    }
+
+
+
+
+
+
+
+
+
+
+
+.main-container{
+    display: grid;
+    grid-template-columns: auto 80% auto ;
+    justify-items: center;
+    align-items: center;
+    height: 500px;
+    row-gap: 50px;
+    column-gap: 50px;
+}
+
+.grid-item {
+    background-color: aqua;
+}
