@@ -5,19 +5,21 @@ body{
 
 header{
 grid-area: header;
-background-color: #66f;
+background-color: #A1E283;
+height: 35px;
 }
 
 menu{
 grid-area: menu;
-background-color: #66f;
+background-color: blueviolet;
 margin: 0px;
+width: 200px;
 }
 
 
 footer{
 grid-area: footer;
-background-color: #66f;
+background-color: red;
 }
 
 .grid-container{
@@ -25,20 +27,43 @@ background-color: #66f;
     grid-template-areas: "header header"
     "menu main-container"
     "footer footer";
-    gap: 10px;
+    gap: px;
 }
 .main-container{
+    padding: 30px;
     grid-area: main-container;
     background-color: #66f;
     display: grid;
     grid-template-columns: auto auto auto auto ;
     justify-items: center;
     align-items: center;
-    height: 300px;
-    row-gap: 15px;
+    row-gap: 30px;
     column-gap: 15px;
 }
 
 .grid-item {
-    background-color: aqua;
+    height: 300px;
+    width: 250px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card .texto{
+    align-items: center;
+    text-align: center;
+   
+}
+button {
+    background-color: #A1E283;
+    border-color: #A1E283;
+    color: #fff;
+    padding: 0;
+    height: 30px;
+    width: 100px;
+    border-radius: 20px;
 }
