@@ -5,34 +5,33 @@ body{
 
 header{
 grid-area: header;
-background-color: #A1E283;
-height: 35px;
+background-color: white;
+height: 60px;
+padding-left: 30px;
+
 }
 
 menu{
 grid-area: menu;
-background-color: blueviolet;
+background-color:#A1E283;
 margin: 0px;
-width: 200px;
+padding: 0px;
+
 }
 
 
-footer{
-grid-area: footer;
-background-color: red;
-}
+
 
 .grid-container{
     display: grid;
     grid-template-areas: "header header"
-    "menu main-container"
+    "menu main"
     "footer footer";
     gap: px;
 }
 .main-container{
     padding: 30px;
     grid-area: main-container;
-    background-color: #66f;
     display: grid;
     grid-template-columns: auto auto auto auto ;
     justify-items: center;
@@ -66,4 +65,15 @@ button {
     height: 30px;
     width: 100px;
     border-radius: 20px;
+}
+footer{
+    grid-area: footer;
+    background-color:#377E17;
+    height: 100px;
+    }
+i {
+    width: 30px;
+    font-size: 20px
+    
+    
 }
